@@ -1,0 +1,253 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Deep Yadav - Portfolio</title>
+  <style>
+    :root {
+      --primary-color: #007acc;
+      --bg-light: #f9f9f9;
+      --btn-green: #4caf50;
+      --text-dark: #222;
+      --text-light: #666;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 4px solid white;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: var(--text-light);
+    }
+
+    nav {
+      background: #fff;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: var(--primary-color);
+    }
+
+    section {
+      padding: 2rem 0;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .project-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+
+    .project {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+      padding: 1rem;
+      flex: 1 1 45%;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+    }
+
+    .project img {
+      width: 100%;
+      max-height: 180px;
+      object-fit: contain;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.7rem 1.4rem;
+      background-color: var(--btn-green);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #388e3c;
+    }
+
+    .socials .btn {
+      background-color: var(--primary-color);
+    }
+
+    .socials .btn:hover {
+      background-color: #005b99;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #f0f0f0;
+      color: #777;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .project {
+        flex: 1 1 100%;
+      }
+
+      .profile-img {
+        width: 120px;
+        height: 120px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container header-container">
+      <img src="C:\Users\Deep yadav\OneDrive\Desktop\deepyadavportfolio\images\img.jpeg" alt="Deep Yadav" class="profile-img" />
+      <h1>Deep Yadav</h1>
+      <p>Web Developer | UI/UX Enthusiast | Lifelong Learner</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="mailto:yadavdeep556@gmail.com">Contact</a>
+  </nav>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <p>Hello visitor, this is Deep Yadav. I am here to give your website a new way of customization. I have done HTML, CSS, and JavaScript.</p>
+  </section>
+
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+
+    <div class="project-row">
+      
+      
+      <div class="project">
+        <img src="https://static.vecteezy.com/system/resources/previews/051/336/398/non_2x/w3schools-transparent-logo-free-png.png" alt="W3Schools Clone">
+        <h3>W3Schools Clone</h3>
+        <p>Cloning W3Schools provided me deep insights into layout and content structure techniques.</p>
+      </div>
+    </div>
+
+    <div class="project-row">
+      <div class="project">
+        <img src="https://static.vecteezy.com/system/resources/previews/001/416/705/original/html5-emblem-orange-shield-and-white-text-vector.jpg" alt="HTML Project">
+        <h3>HTML Practice</h3>
+        <p>Created structured layouts using HTML elements as a foundation for web pages.</p>
+      </div>
+      <div class="project">
+        <img src="https://static.vecteezy.com/system/resources/previews/001/416/705/original/html5-emblem-orange-shield-and-white-text-vector.jpg" alt="CSS Styling">
+        <h3>CSS Styling</h3>
+        <p>Enhanced the look and feel of web content using advanced CSS techniques.</p>
+      </div>
+    </div>
+
+    <div class="project-row">
+      <div class="project" style="flex: 1 1 100%;">
+        <img src="https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Emblem.png" alt="JavaScript">
+        <h3>JavaScript</h3>
+        <p>Implemented interactivity and functionality using core JavaScript methods.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <p>Have a project or want to collaborate? Let's get in touch.</p>
+    <a href="mailto:yadavdeep556@gmail.com" class="btn">Email Me</a>
+  </section>
+
+  <section class="socials container">
+    <h2>Connect with Me</h2>
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+      <a href="https://github.com/DEEPYADAV-lab/web_project" target="_blank" class="btn">My GitHub</a>
+      <a href="#" target="_blank" class="btn">My LinkedIn</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Deep Yadav</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.btn').forEach(function (button) {
+      button.addEventListener('click', function () {
+        if (button.href.startsWith('mailto:')) {
+          alert('Thank you for reaching out!');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
