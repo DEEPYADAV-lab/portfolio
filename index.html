@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -147,6 +147,42 @@
       margin-top: 2rem;
     }
 
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .modal-content {
+      background-color: #fff;
+      margin: 5% auto;
+      padding: 1rem;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 800px;
+      position: relative;
+    }
+
+    .modal .close {
+      color: #aaa;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .modal .close:hover {
+      color: black;
+    }
+
     @media (max-width: 768px) {
       .project {
         flex: 1 1 100%;
@@ -168,7 +204,7 @@
 
   <header>
     <div class="container header-container">
-      <img src="img.jpeg" alt="Deep Yadav" class="profile-img" />
+      <img src="images/img.jpeg" alt="Deep Yadav" class="profile-img" />
       <h1>Deep Yadav</h1>
       <p>Web Developer | UI/UX Enthusiast | Lifelong Learner</p>
     </div>
@@ -184,14 +220,13 @@
   <section id="about" class="container">
     <h2>About Me</h2>
     <p>Hello visitor, this is Deep Yadav. I am here to give your website a new way of customization. I have done HTML, CSS, and JavaScript.</p>
+    <a href="cv.pdf" class="btn" id="openModalBtn">View My Resume</a>
   </section>
 
   <section id="projects" class="container">
     <h2>Projects</h2>
 
     <div class="project-row">
-      
-      
       <div class="project">
         <img src="https://static.vecteezy.com/system/resources/previews/051/336/398/non_2x/w3schools-transparent-logo-free-png.png" alt="W3Schools Clone">
         <h3>W3Schools Clone</h3>
@@ -239,15 +274,5 @@
     <p>&copy; 2025 Deep Yadav</p>
   </footer>
 
-  <script>
-    document.querySelectorAll('.btn').forEach(function (button) {
-      button.addEventListener('click', function () {
-        if (button.href.startsWith('mailto:')) {
-          alert('Thank you for reaching out!');
-        }
-      });
-    });
-  </script>
-
-</body>
-</html>
+  <!-- Resume Modal -->
+  <div id="fileModal" class
